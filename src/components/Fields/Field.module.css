@@ -1,0 +1,60 @@
+/* Basic styling for form fields using CSS Modules */
+
+.fieldContainer {
+  margin-bottom: 1rem; /* Add some space between fields */
+  display: flex;
+  flex-direction: column;
+}
+
+.fieldLabel {
+  margin-bottom: 0.25rem;
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #333; /* Example color */
+}
+
+.requiredIndicator {
+  color: #d9534f; /* Example error/required color */
+  margin-left: 0.25rem;
+}
+
+.fieldInput {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #fff; /* Added background color back */
+  color: #333; /* Added text color back */
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.fieldInput:focus {
+  border-color: #66afe9; /* Example focus color */
+  /* outline: 0; */ /* Keep default outline */
+  box-shadow: 0 0 0 0.2rem rgba(102, 175, 233, 0.25); /* Example focus shadow */
+}
+
+/* --- Error Styling --- */
+.inputError {
+  border-color: #dc3545; /* Red border for error */
+  /* Add box-shadow or other indicators if desired */
+}
+
+.inputError:focus {
+  border-color: #dc3545;
+  /* outline: 0; */ /* Keep default outline */
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25); /* Red focus shadow */
+}
+
+.errorMessage {
+  color: #dc3545; /* Red text for error message */
+  font-size: 0.875em; /* Slightly smaller font */
+  margin-top: 0.25rem; /* Space above the message */
+  margin-bottom: 0; /* Reset bottom margin */
+}
+
+/* Specific style for checkbox error message indentation */
+.checkboxErrorMessage {
+  composes: errorMessage; /* Inherit base error styles */
+  margin-left: 20px; /* Indent error message */
+}

@@ -1,0 +1,26 @@
+.cardSection {
+  border: 1px solid #e0e0e0; /* Light grey border */
+  border-radius: 8px; /* Rounded corners */
+  margin-bottom: 1.5rem; /* Space below the card */
+  background-color: #ffffff; /* White background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+  overflow: hidden; /* Ensure content respects border radius */
+}
+
+.cardHeader {
+  background-color: #f8f9fa; /* Slightly off-white header background */
+  padding: 0.75rem 1.25rem; /* Padding for the header */
+  border-bottom: 1px solid #e0e0e0; /* Separator line */
+  font-size: 1.1rem; /* Slightly larger font for title */
+  font-weight: 600; /* Bolder title */
+  margin: 0; /* Remove default margin from heading */
+}
+
+.cardContent {
+  padding: 1.25rem; /* Padding inside the card content area */
+}
+
+/* Optional: Add some spacing between fields within the card */
+.cardContent > * + * {
+  margin-top: 1rem;
+}

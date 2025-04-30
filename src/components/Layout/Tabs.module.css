@@ -1,0 +1,33 @@
+/* Styling for Tabs Layout */
+
+.tabHeaderContainer {
+  display: flex;
+  border-bottom: 2px solid #ccc; /* Separator line */
+  margin-bottom: 1rem;
+}
+
+.tabButton {
+  padding: 0.75rem 1.25rem;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font-size: 1rem;
+  color: #555;
+  border-bottom: 2px solid transparent; /* Placeholder for active indicator */
+  margin-bottom: -2px; /* Align bottom border with container's border */
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.tabButton:hover {
+  color: #000;
+}
+
+.tabButtonActive {
+  color: #007bff; /* Example active color */
+  border-bottom-color: #007bff; /* Active indicator */
+  font-weight: bold;
+}
+
+.tabContent {
+  padding: 1rem 0; /* Add some padding to the content area */
+}

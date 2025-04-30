@@ -1,0 +1,6 @@
+.divider {
+  border: none; /* Remove default border */
+  border-top: 1px solid var(--df-border-color); /* Use theme variable */
+  margin: calc(var(--df-spacing-unit) * 2) 0; /* Use theme variable for spacing */
+  width: 100%;
+}
